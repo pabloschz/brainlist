@@ -11,8 +11,9 @@ datasource db {
     // url      = env("DATABASE_URL")
 }
 
-model Example {
+model Todo {
     id String @id @default(cuid())
+    text String
 }
 
 // Necessary for Next auth
